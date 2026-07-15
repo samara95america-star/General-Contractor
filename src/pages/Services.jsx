@@ -1,5 +1,6 @@
 // src/pages/Services.jsx
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import ServiceCard from '../components/ServiceCard';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -125,12 +126,12 @@ export default function Services() {
                 </div>
 
                 <div className="mt-6 flex flex-wrap gap-4 justify-end">
-                  <a
-                    href={`/estimate?type=${encodeURIComponent(service.title)}`}
+                  <Link
+                    to={`/estimate?type=${encodeURIComponent(service.title)}`}
                     className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-5 rounded-lg shadow transition-all focus:outline-none focus:ring-2 focus:ring-orange-500"
                   >
                     Request Estimate
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
