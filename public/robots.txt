@@ -1,0 +1,12 @@
+# robots.txt for Summit Build Contractors
+# NOTE: This file directs search engine crawlers regarding indexing paths.
+# Update this with actual production canonical domain prior to launch.
+
+User-agent: *
+Allow: /
+
+# Exclude sensitive system files or administration paths
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://www.summitbuildcontractors.com/sitemap.xml
