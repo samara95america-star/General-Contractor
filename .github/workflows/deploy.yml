@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main", "jules-13398359115968294855-44c4c222"]
+    branches: ["main", "feature/summit-build-website-13398359115968294855", "jules-13398359115968294855-44c4c222"]
   workflow_dispatch:
 
 permissions:
